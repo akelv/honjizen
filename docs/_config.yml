@@ -27,14 +27,33 @@ url: "https://akelv.github.io" # the base hostname & protocol for your site, e.g
 
 github_username:  akelv
 
+# Authors
+authors:
+  thuong:
+    name: Thuong
+    display_name: Thuong
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: vuongthuong@gmail.com
+    description: "The dad"
+
 # Build settings
-# theme: minima
 # remote_theme: mmistakes/minimal-mistakes@4.24.0
 remote_theme: wowthemesnet/mediumish-theme-jekyll@1.0.36
 plugins:
   - jekyll-feed
   - jekyll-include-cache
-
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
